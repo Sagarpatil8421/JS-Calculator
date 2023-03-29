@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form name="calci">
+            <input type="text" id="answer" name="answer" placeholder="0" >
+            <div class="row">
+                <input type="button" value="1" onclick="calci.answer.value += '1'">
+                <input type="button" value="2" onclick="calci.answer.value += '2'">
+                <input type="button" value="3" onclick="calci.answer.value += '3'">
+                <input type="button" value="+" onclick="calci.answer.value += '+'">
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="calci.answer.value += '4'">
+                <input type="button" value="5" onclick="calci.answer.value += '5'">
+                <input type="button" value="6" onclick="calci.answer.value += '6'">
+                <input type="button" value="-" onclick="calci.answer.value += '-'">
+            </div>
+            <div class="row">
+                <input type="button" value="7" onclick="calci.answer.value += '7'">
+                <input type="button" value="8" onclick="calci.answer.value += '8'">
+                <input type="button" value="9" onclick="calci.answer.value += '9'">
+                <input type="button" value="*" onclick="calci.answer.value += '*'">
+            </div>
+            <div class="row">
+                <input type="button" value="/" onclick="calci.answer.value += '/'">
+                <input type="button" value="0" onclick="calci.answer.value += '0'">
+                <input type="button" value="." onclick="calci.answer.value += '.'">
+                <input type="button" value="=" onclick="calci.answer.value =eval(calci.answer.value) ">
+            </div>
+            <input type="button" id="clear" value="Clear All" onclick="calci.answer.value=''">
+        </form>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
